@@ -1,0 +1,117 @@
+<html>
+<script>
+	function validation() {
+		
+		var name = document.form.stu_name.value;
+		var regno = document.form.stu_regno.value;
+		var email = document.form.stu_email.value;
+		var dept = document.form.stu_dep.value;
+		
+		if (name == null || name == "") 
+		{
+			alert("Please enter an Name");
+		}
+		else if (regno == null || regno == "") 
+		{
+			alert("Please enter an Registration Num");
+		}
+		else if (email == null || email == "") 
+		{
+			alert("Please enter an Email");
+		}
+		else if (dept == null || dept == "") 
+		{
+			alert("Please enter an Department");
+		}
+		else if (name.length < 8) 
+		{
+			alert("Name should have minimum of 8 characters");
+		}
+		else if(email.length < 10)
+		{
+			alert("Email should have minimum of 10 characters");
+		}
+		else if(!email.includes("@") || !email.includes("."))
+		{
+			alert("Invalid Email id must contain @ and .")
+		}
+		else if(dept != 'CSE' || dept != 'ME' || dept != 'ECE' || dept != 'cse')
+		{
+			alert("Please enter valid Department")
+		}
+		else if(regno <= 190000000 && regno >= 200000000)
+		{
+			alert("Regno starts with 190000000 and ends with 200000000")
+		}
+		else
+		{
+			alert("Welcome "+name)
+		}
+	}
+</script>
+<link rel="stylesheet" href="D:/Eclipse/Workspace/Student/WebContent/WEB-INF/form.css" type="text/css">
+<head>
+	<h1>Registration Page</h1>
+</head>
+<body class="bgm">
+	<form method="post" onSubmit="validation()" name="form">
+		<table class="center">
+			<tr>
+				<td><label class="labels">Student Name: </label></td>
+				<td><input type="text" name="stu_name"></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Registration No.: </label></td>
+				<td><input type="text" name="stu_regno"></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Email id: </label></td>
+				<td><input type="text" name="stu_email"></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Department: </label></td>
+				<td><input type="text" name="stu_dep"></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Favorite Sports:</label></td>
+				<td><input type="checkbox" name="Cricket"> <label
+					class="labels">Cricket</label> <input type="checkbox"
+					name="Football"> <label class="labels">Football</label> <input
+					type="checkbox" name="Basket Ball"> <label class="labels">Basket
+						Ball</label><br></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Gender:</label></td>
+				<td><input type="radio" name="gender" value="male" required> <label
+					class="labels">Male</label> <input type="radio" name="gender"
+					value="female"> <label class="labels">Female</label></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Favorite Subject:</label></td>
+				<td><select>
+						<option value="DBMS">DBMS</option>
+						<option value="EP">EP</option>
+						<option value="AI">AI</option>
+						<option value="PFSD">PFSD</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels">Address:</label></td>
+				<td><textarea name="address" rows="4" cols="50">
+</textarea><br></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="login" class="tab"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
