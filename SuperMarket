@@ -1,6 +1,6 @@
-package com.klu.Ram;
+package com.klu.Bean;
 
-public class Ram {
+public class Bean {
 
 	private int itemid;
 	private String itemname;
