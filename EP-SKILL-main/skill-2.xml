@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="skill-2.xsl"?>
+<Students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="skill-2.xsd">
+	<student no="a">
+		<name>Prathyusha</name>
+		<email>Prathyusha@gmail.com</email>
+		<marks>98</marks>
+		<class>S-1</class>
+	</student>
+	<student no="b">
+		<name>Priya</name>
+		<email>Priya@gmail.com</email>
+		<marks>95</marks>
+		<class>S-11</class>
+	</student>
+	<student no="c">
+		<name>Pranathi</name>
+		<email>Pranathi@gmail.com</email>
+		<marks>97</marks>
+		<class>S-9</class>
+	</student>
+	<student no="d">
+		<name>Ramya</name>
+		<email>Ramya@gmail.com</email>
+		<marks>94</marks>
+		<class>S-4</class>
+	</student>
+	<student no="e">
+		<name>Harika</name>
+		<email>Harikaa@gmail.com</email>
+		<marks>90</marks>
+		<class>S-6</class>
+	</student>
+</Students>
